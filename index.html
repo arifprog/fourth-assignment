@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body class="font-jakarta">
+    <!-- To create header section -->
+
+    <header class="w-full h-[75px] border-l-[18px] border-l-red-500">
+        <div class="container">
+            <nav class="flex justify-between items-center px-1 md:px-6 py-3">
+                <div>
+                    <img src="images/image2.png" alt="logo">
+                </div>
+                <div>
+                    <button class="block p-3 md:hidden" aria-controls="mobile-menu"
+                        aria-expanded="false" id="hamburger-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+
+                    <div class="hidden flex gap-1 md:flex md:space-x-7 md: text-black" id="mobile-menu">
+                        <a href="#" class="text-base hover:text-[#f44355] hover:underline">Home</a>
+                        <a href="#" class="text-base hover:text-[#f44355] hover:underline">About Us</a>
+                        <a href="#" class="text-base hover:text-[#f44355] hover:underline">Upskill</a>
+                        <a href="#" class="text-base hover:text-[#f44355] hover:underline">Contact us </a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center  md:gap-x-5">
+
+                    <div>
+                        <button
+                            class="text-white text-xs md:text-lg bg-[#f44355]  hover:bg-green-300/85 hover:text-black rounded-md w-[60px] md:w-[173px] h-[35px] md:h-[47px]">
+                            Register Interest
+                        </button>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- To create Hero section -->
+     <section class="container mx-auto w-full h-[740px] bg-slate-500 relative">
+        <div class=" w-full h-[715px] relative border-l-[18px] border-l-red-500  ">
+            <img class=" absolute w-full h-full object-cover md:right-[22px]" src="images/image1.png" alt="background">
+        </div>
+        <!-- For cover background design -->
+         <div class="w-full h-[175px] absolute md:top-[530px] top-[680px]">
+            
+            <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 270"><path fill="white" fill-opacity="0.99" d="M0,64L120,85.3C240,107,480,149,720,149.3C960,149,1200,107,1320,85.3L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+           
+         </div>
+
+     </section>
+     
+
+
+     <script>
+        const hamburgerButton = document.getElementById('hamburger-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        hamburgerButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+
+        });
+    </script>
+</body>
+</html>
